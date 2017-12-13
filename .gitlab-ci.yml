@@ -1,0 +1,9 @@
+production:
+  script:
+     - echo $CI_PROJECT_DIR
+     - sudo rsync --progress -avz -e "ssh -i /home/key/ssh-rsync" /home/gitlab-runner/builds/b5c010d8/0/Live-Stream/Live-Stream-Server-Example/ root@171.244.21.78:/srv/stream-server
+     - sudo bash /home/deploy_stream_server.sh
+  tags:
+    - PRODUCT
+  only:
+    - master
