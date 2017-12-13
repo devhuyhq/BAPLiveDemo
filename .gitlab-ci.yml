@@ -1,0 +1,9 @@
+production:
+  script:
+     - echo $CI_PROJECT_DIR
+#    - sudo rsync --progress -avz -e "ssh -i /home/key/ssh-rsync" /home/gitlab-runner/builds/37c352f9/0/VN-APP/NodeJS-sns-chat/ root@172.32.0.12:/srv/sns-chat
+#    - bash /home/deploy_sns_chat.sh
+  tags:
+    - PRODUCT
+  only:
+    - master
