@@ -1,7 +1,7 @@
 production:
   script:
      - echo $CI_PROJECT_DIR
-     - sudo rsync --progress -avz -e "ssh -i /home/key/ssh-rsync" /home/gitlab-runner/builds/b5c010d8/0/Live-Stream/Live-Stream-Server-Example/ root@171.244.21.78:/srv/stream-chat
+     - sudo rsync --progress -avz -e "ssh -i /home/key/ssh-rsync" /home/gitlab-runner/builds/b5c010d8/0/Live-Stream/Live-Stream-Server-Example/ root@171.244.21.78:/srv/stream-server
 #    - bash /home/deploy_sns_chat.sh
   tags:
     - PRODUCT
