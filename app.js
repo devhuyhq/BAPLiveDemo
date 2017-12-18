@@ -49,4 +49,4 @@ app.use(function(err, req, res, next) {
 const server = app.listen(4000);
 const io = require('socket.io').listen(server, {pingTimeout: 30000});
 // BAPLive.default.init('mongodb://localhost:27017/baplivedemo', io, null, 'baplivedemo', 'rtmp://171.244.21.78/live');
-BAPLive.default.init('mongodb://stream:SOh3Pxmt1oTbYhx8ypJOfL@mongodb1:27017,mongodb2:27017/stream?replicaSet=rs0', io, null, 'baplivedemo', 'rtmp://171.244.21.78/live');
+BAPLive.default.init('mongodb://stream:HvTbLeonJrRFLSsUnh0utMm5y@mongodb1:27017,mongodb2:27017/stream?replicaSet=rs0', io, null, 'baplivedemo', 'rtmp://171.244.21.78/live');
